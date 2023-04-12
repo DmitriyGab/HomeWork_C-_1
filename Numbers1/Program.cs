@@ -33,44 +33,44 @@
 // 44 5 78 -> 78
 // 22 3 9 -> 22
 
-Console.WriteLine("Введите число 1");
-int number1 = Convert.ToInt32 (Console.ReadLine());
-Console.WriteLine("Введите число 2");
-int number2 = Convert.ToInt32 (Console.ReadLine());
-Console.WriteLine("Введите число 3");
-int number3 = Convert.ToInt32 (Console.ReadLine());
+// Console.WriteLine("Введите число 1");
+// int number1 = Convert.ToInt32 (Console.ReadLine());
+// Console.WriteLine("Введите число 2");
+// int number2 = Convert.ToInt32 (Console.ReadLine());
+// Console.WriteLine("Введите число 3");
+// int number3 = Convert.ToInt32 (Console.ReadLine());
 
-if (number1 > number2)
-{
-    if (number1 > number3)
-    {
-    Console.Write(number1);
-    Console.WriteLine(" - большее число");
-    }
+// if (number1 > number2)
+// {
+//     if (number1 > number3)
+//     {
+//     Console.Write(number1);
+//     Console.WriteLine(" - большее число");
+//     }
     
-    else
-    {
-    Console.Write(number3);
-    Console.WriteLine(" - большее число");
-    }
-}
+//     else
+//     {
+//     Console.Write(number3);
+//     Console.WriteLine(" - большее число");
+//     }
+// }
 
-else if (number2 > number3)
-{
-    Console.Write(number2);
-    Console.WriteLine(" - большее число");
-}
+// else if (number2 > number3)
+// {
+//     Console.Write(number2);
+//     Console.WriteLine(" - большее число");
+// }
 
-else if (number2 < number3)
-{
-    Console.Write(number3);
-    Console.WriteLine(" - большее число");
-}
+// else if (number2 < number3)
+// {
+//     Console.Write(number3);
+//     Console.WriteLine(" - большее число");
+// }
 
-else
-{
-        Console.WriteLine("Числа равны");
-}
+// else
+// {
+//         Console.WriteLine("Числа равны");
+// }
 
 
 // Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
@@ -86,12 +86,12 @@ else
 
 // if (NegNumber == 0)
 // {
-//         Console.WriteLine(number);
+//         Console.Write(number);
 //         Console.WriteLine(" - четное число");
 // }
 // else
 // {
-//         Console.WriteLine(number);
+//         Console.Write(number);
 //         Console.WriteLine(" - нечетное число");
 // }
 
@@ -101,22 +101,15 @@ else
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
 
-// Console.WriteLine("Введите число");
-// int number = Convert.ToInt32(Console.ReadLine());
-// int current_number = 0;
+Console.WriteLine("Введите число");
+int number = Convert.ToInt32(Console.ReadLine());
+int i = 1;
 
-// while (current_number <= number)
-// {
-//     current_number++;
-//     int NegNumber = current_number % 2;
-//     if (NegNumber == 0);
-//     {
-//         Console.WriteLine(current_number);
-//     }
-    
-//     else
-//     {
-//         Console.WriteLine(" ");
-//     }
-// }
-
+while (i <= number)
+    {
+        if (i % 2 == 0)
+        {
+        Console.Write(+i+", ");
+        }
+    i++;
+    }
