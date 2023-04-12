@@ -5,26 +5,26 @@
 // a = -9 b = -3 -> max = -3
 
 
-Console.WriteLine("Введите число 1");
-int number1 = Convert.ToInt32 (Console.ReadLine());
-Console.WriteLine("Введите число 2");
-int number2 = Convert.ToInt32 (Console.ReadLine());
+// Console.WriteLine("Введите число 1");
+// int number1 = Convert.ToInt32 (Console.ReadLine());
+// Console.WriteLine("Введите число 2");
+// int number2 = Convert.ToInt32 (Console.ReadLine());
 
-if (number1 > number2)
-{
-    Console.Write(number1);
-    Console.WriteLine(" - Max Number");
-    Console.Write(number2);
-    Console.WriteLine(" - Min Number");
-}
+// if (number1 > number2)
+// {
+//     Console.Write(number1);
+//     Console.WriteLine(" - Max Number");
+//     Console.Write(number2);
+//     Console.WriteLine(" - Min Number");
+// }
 
-else
-{
-    Console.Write(number2);
-    Console.WriteLine(" - Max Number");
-    Console.Write(number1);
-    Console.WriteLine(" - Min Number");
-}
+// else
+// {
+//     Console.Write(number2);
+//     Console.WriteLine(" - Max Number");
+//     Console.Write(number1);
+//     Console.WriteLine(" - Min Number");
+// }
 
 
 // Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
@@ -33,37 +33,44 @@ else
 // 44 5 78 -> 78
 // 22 3 9 -> 22
 
-// Console.WriteLine("Введите число 1");
-// int number1 = Convert.ToInt32 (Console.ReadLine());
-// Console.WriteLine("Введите число 2");
-// int number2 = Convert.ToInt32 (Console.ReadLine());
-// Console.WriteLine("Введите число 3");
-// int number3 = Convert.ToInt32 (Console.ReadLine());
+Console.WriteLine("Введите число 1");
+int number1 = Convert.ToInt32 (Console.ReadLine());
+Console.WriteLine("Введите число 2");
+int number2 = Convert.ToInt32 (Console.ReadLine());
+Console.WriteLine("Введите число 3");
+int number3 = Convert.ToInt32 (Console.ReadLine());
 
-// if (number1 > number2)
-// {
-//     if (number1 > number3)
-//     {
-//     Console.WriteLine(number1);
-//     Console.WriteLine(" - большее число");
-//     }
-//     else
-//     {
-//     Console.WriteLine(number3);
-//     Console.WriteLine(" - большее число");
-//     }
-// }
+if (number1 > number2)
+{
+    if (number1 > number3)
+    {
+    Console.Write(number1);
+    Console.WriteLine(" - большее число");
+    }
+    
+    else
+    {
+    Console.Write(number3);
+    Console.WriteLine(" - большее число");
+    }
+}
 
-// else if (number2 > number3)
-// {
-//     Console.WriteLine(number2);
-//     Console.WriteLine(" - большее число");
-// }
-// else 
-// {
-//     Console.WriteLine(number3);
-//     Console.WriteLine(" - большее число");
-// }
+else if (number2 > number3)
+{
+    Console.Write(number2);
+    Console.WriteLine(" - большее число");
+}
+
+else if (number2 < number3)
+{
+    Console.Write(number3);
+    Console.WriteLine(" - большее число");
+}
+
+else
+{
+        Console.WriteLine("Числа равны");
+}
 
 
 // Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
